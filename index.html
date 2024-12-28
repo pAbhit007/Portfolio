@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+    <div class="logo">Abhit Pandey</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Abhit Pandey</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assests/profile-pic.jpeg" alt="'Abhit Pandey Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Abhit Pandey</h1>
+            <p class="section__text__p2">Software Developer</p>
+            <div class="btn-container">
+                <button class = "btn btn-color-2" onclick="window.open('./assests/resume-example.pdf')">
+                    Download CV</button>
+                <button class = "btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assests/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/abhit-pandey-9a481522b/'">
+                <img src="./assests/github.png" alt="My GitHub Profile" class="icon" onclick="location.href='https://github.com/pabhit007'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assests/about-pic.jpeg" 
+                alt="Profile Picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assests/experience.png" alt="Experience icon"
+                        class="icon" />
+                        <h3>Experience</h3>
+                        <p>Research Intern <br>IIT BHU</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assests/education.png" alt="Education icon"
+                        class="icon" />
+                        <h3>Education</h3>
+                        <p>B.Tech NIT PATNA<br>ECE </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        <li>I am a final-year B.Tech student in Electronics and Communication Engineering at the National Institute of Technology, Patna, 
+                        with a strong foundation in programming and problem-solving skills combined with my hands-on experience in developing and 
+                        deploying machine learning models, I thrive at the intersection of innovation and technology.</li> 
+                        <li> As a UG Research Fellow and ML enthusiast, I have worked extensively on building efficient algorithms and intelligent systems, with proficiency in Data Structures, Algorithms, and 
+                        programming languages like C++, Python, and Java.</li>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#experience'"/>
+    </section>
+    <br><br>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <!-- Logo Section -->
+            <div class="experience-logo">
+                <img src="./assests/IIT-Logo.jpeg" alt="IIT BHU Logo" class="experience-logo-img">
+            </div>
+            <!-- Details Section -->
+            <div class="details-containers">
+                <h2>Research Intern</h2>
+                <p class="experience-institution">Indian Institute of Technology (IIT BHU)</p>
+                <ul class="experience-description">
+                    <li>Developed and implemented various transformer-based models for dental image segmentation using deep learning techniques for training of 2500 images.</li>
+                    <li>Engineered tailored models for the given tasks by infusing SegNet convolution layers with transformers; achieved an IoU improvement of 20% compared to traditional segmentation methods.</li>
+                    <li>Employed effective data preprocessing and augmentation techniques to enhance the model's robustness and generalization capabilities and increased model’s performance metrics over 90%.</li>
+                </ul>
+                <div class="btn-container-L">
+                    <a href="./assests/Abhit_IIT.pdf" class="btn1 btn-color-2" onclick="window.open(this.href, '_blank'); return false;">
+                        Certificate
+                    </a>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#skills'"/>
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Have a look on my</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <!-- Programming Languages Section -->
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Programming Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Skill icon" class="icon" />
+                            <div>
+                                <h3>C++</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Skill icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Skill icon" class="icon" />
+                            <div>
+                                <h3>OOP</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Skill icon" class="icon" />
+                            <div>
+                                <h3>C</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Skill icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Skill icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+    
+                <!-- Frameworks Section -->
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Frameworks & Databases</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Skill icon" class="icon" />
+                            <div>
+                                <h3>Pytorch</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Skill icon" class="icon" />
+                            <div>
+                                <h3>Tensorflow</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Skill icon" class="icon" />
+                            <div>
+                                <h3>AWS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Skill icon" class="icon" />
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Skill icon" class="icon" />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+    
+                <!-- Areas of Interest Section -->
+<div class="details-container areas-of-interest">
+    <h2 class="skill-sub-title">Areas of Interest</h2>
+    <div class="article-container">
+        <article>
+            <img src="./assests/checkmark.png" alt="Skill icon" class="icon" />
+            <div>
+                <h3>Data Structures and Algorithms</h3>
+                <p>Experienced</p>
+            </div>
+        </article>
+        <article>
+            <img src="./assests/checkmark.png" alt="Skill icon" class="icon" />
+            <div>
+                <h3>Computer Vision</h3>
+                <p>Experienced</p>
+            </div>
+        </article>
+        <article>
+            <img src="./assests/checkmark.png" alt="Skill icon" class="icon" />
+            <div>
+                <h3>Machine Learning</h3>
+                <p>Intermediate</p>
+            </div>
+        </article>
+        <article>
+            <img src="./assests/checkmark.png" alt="Skill icon" class="icon" />
+            <div>
+                <h3>Deep Learning</h3>
+                <p>Intermediate</p>
+            </div>
+        </article>
+    </div>
+</div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <br><br>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assests/project-1.jpeg"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Text-2-Image Synthesis</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/pAbhit007/TEXT2IMAGE_GANs'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assests/project-2.jpeg"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Heart Disease Prediction</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/pAbhit007/ML_Heart_Disease_Prediction'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assests/project-3.jpeg"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Carvana Image Masking</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/pAbhit007/Carvana_Image-Masking'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assests/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assests/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:pandey.06abhit@gmail.com">Pandey.06abhit@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assests/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/abhit-pandey-9a481522b/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Abhit Pandey. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+    </body>
+  </html>
