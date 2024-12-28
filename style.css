@@ -369,6 +369,11 @@ section {
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
+.experience-sub-title1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0rem;
+}
 
 .experience-institution {
     font-size: 1.2rem;
@@ -467,25 +472,7 @@ article .icon {
     cursor: default;
 }
 
-@media screen and (max-width: 768px) {
-    .skills-container {
-        flex-direction: column; /* Stack both sections vertically on smaller screens */
-    }
 
-    .technical-skills-container {
-        flex: 1;
-    }
-
-    .article-container {
-        justify-content: flex-start;
-        gap: 0.8rem; /* Reduced gap between skills on mobile */
-    }
-
-    article {
-        width: auto;
-        text-align: center;
-    }
-}
 
 /* Areas of Interest Section Styling */
 .areas-of-interest {
@@ -514,8 +501,8 @@ article .icon {
   
   .project-img {
     border-radius: 2rem;
-    width: 80%;
-    height: 80%;
+    width: 95%;
+    height: 95%;
   }
   
   .project-title {
@@ -527,6 +514,15 @@ article .icon {
     color: black;
     border-color: rgb(163, 163, 163);
   }
+
+  .about-containers2{
+    gap: 2rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+.about-containers2 {
+    display: flex;
+}
   
   /* CONTACT */
 
@@ -579,35 +575,5 @@ article .icon {
     text-align: center;
   }
  /* Reduce the size of the article container */
-/* Reduce size of article-container1 */
-.article-container1 {
-    max-width: 200px; /* Set maximum width */
-    margin: 0 auto; /* Center the container */
-    padding: 1px; /* Add slight padding */
-}
-
-/* Ensure the image scales properly */
-.project-img {
-    width: 100%; /* Image scales to container width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: add rounded corners */
-}
-
-/* Adjust titles and buttons to match smaller container */
-.project-title1 {
-    font-size: 1rem; /* Reduce font size for titles */
-    margin: 0.4rem 0; /* Adjust spacing for titles */
-}
-
-.btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 0.4rem; /* Reduce space between buttons */
-}
-
-.project-btn {
-    font-size: 0.8rem; /* Smaller button text */
-    padding: 6px 12px; /* Reduce button padding */
-}
 
  
